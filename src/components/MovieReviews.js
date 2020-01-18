@@ -1,11 +1,12 @@
-// Code MovieReviews Here
 import React from 'react';
+import MovieReview from './MovieReview'
 
-const MovieReview = ({ title, summary }) => (
-    <li className='review'>
-        <h1>{title}</h1>
-        <p>{summary}</p>
-    </li>
+const MovieReviews = ({ reviews }) => (
+    <ul className="review-list">
+        {/* {console.log(reviews)} */}
+        {reviews.map(review => (<MovieReview title={review.display_title} summary={review.summary_short}/>))}
+        {/* {movies.map(movie => (<Movie  movieInfo={movie}/>))} */}
+    </ul>
 )
 
-export default MovieReview 
+export default MovieReviews; 
