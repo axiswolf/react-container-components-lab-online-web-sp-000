@@ -33,3 +33,4 @@ export default class LatestMovieReviewsContainer extends Component {
             </div>
         )
     }
+}
