@@ -9,4 +9,4 @@ const MovieReviews = ({ reviews }) => (
     </ul>
 )
 
-export default MovieReviews; 
+export default MovieReviews;
